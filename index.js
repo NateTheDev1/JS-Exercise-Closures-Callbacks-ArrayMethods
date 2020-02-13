@@ -15,11 +15,7 @@
  * should return 'foofoo'.
 */
 function processFirstItem(stringList, callback) {
-<<<<<<< HEAD
   return callback(stringList[0]);
-=======
-	return callback(stringList[0]);
->>>>>>> d6b29eab13e681bd27570b686e9b0c5b7803f4f5
 }
 
 // ⭐️ Example Challenge END ⭐️
@@ -70,7 +66,7 @@ function processLength(list, callback) {
  * should return 'barbar'.
 */
 function processLastItem(stringList, callback) {
-  return callback(stringList[stringList.length] - 1);
+  return callback(stringList[stringList.length - 1]);
 }
 
 /**
@@ -112,8 +108,8 @@ function processSum(numberList, callback) {
  * [2] Invoking `processProduct` passing 25 and 0 and `(num) => num + 1000`,
  * should return 1000.
 */
-function processProduct(/* CODE HERE */) {
-	/* CODE HERE */
+function processProduct(num1, num2, callback) {
+	return callback(num1 * num2);
 }
 
 /**
@@ -136,8 +132,8 @@ function processProduct(/* CODE HERE */) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
 */
-function processContains(/* CODE HERE */) {
-	/* CODE HERE */
+function processContains(item, list, callback) {
+	return callback(list.includes(item))
 }
 
 /**
