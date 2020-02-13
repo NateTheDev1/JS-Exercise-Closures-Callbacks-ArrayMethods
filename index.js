@@ -290,7 +290,11 @@ function counterMakerWithLimit(maxValue) {
 	let count = 0;
 
 	return function counter() {
-		count > maxValue ? count = 0 : count;
+		if(count > maxValue) {
+			count = 0;
+		} else {
+			count;
+		}
 		return count++;
 	}
 }
